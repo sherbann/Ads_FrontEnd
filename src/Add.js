@@ -63,7 +63,7 @@ function Add(props) {
         Location: <br />
         <input
           type="text"
-          defaultValue={props.currentAd?.location}
+          defaultValue={props.currentAd?.location || ""}
           name="adLocation"
           disabled={disabled}
           size="40"
@@ -88,7 +88,7 @@ function Add(props) {
 
         <input
           type="date"
-          defaultValue={props.currentAd?.date}
+          defaultValue={props.currentAd?.date || ""}
           name="date"
           disabled={disabled}
           placeholder="dd/mm/yyyy"
@@ -101,7 +101,7 @@ function Add(props) {
         <br />
         <input
           type="time"
-          defaultValue={props.currentAd?.time}
+          defaultValue={props.currentAd?.time || ""}
           name="time"
           disabled={disabled}
           placeholder="--:--"
