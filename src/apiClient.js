@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "https://radiant-bastion-55140.herokuapp.com/";
+const url = "https://event-dashboard-app-backend.herokuapp.com/";
 
 export class ApiClient {
   constructor(tokenProvider,logoutHandler){
